@@ -6,6 +6,14 @@ interface ChaptersProps {
 }
 
 const Chapters: React.FC<ChaptersProps> = ({ data }) => {
+  const parseText = (text) => {
+    const parsedText = text.split("\n").filter((x) => {
+      return x.replace(/\s/g, "").length;
+    });
+
+    return parsedText;
+  };
+
   return (
     <Box>
       {data!.map((t) => {
@@ -16,7 +24,13 @@ const Chapters: React.FC<ChaptersProps> = ({ data }) => {
               return (
                 <Box key={c.chapter_id} mt={30}>
                   <Heading size="md">{c.heading}</Heading>
-                  <Text mt={5}>{c.text}</Text>
+                  {parseText(c.text).map((p) => {
+                    return (
+                      <Box mt={5} mb={5}>
+                        <p>{p}</p>
+                      </Box>
+                    );
+                  })}
                 </Box>
               );
             })}

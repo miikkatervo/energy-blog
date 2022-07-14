@@ -9,11 +9,13 @@ export const NavBar: React.FC<NavBarProps> = ({}) => {
       <Flex flex={1} m="auto" align="center" maxW={1000}>
         <NextLink href="/">
           <Link>
-            <Heading color="white">Energy Blog</Heading>
+            <Heading color="white">
+              Our Shift to Clean Energy (In a Nutshell)
+            </Heading>
           </Link>
         </NextLink>
         <Box height="100%" position="relative" ml={3}>
-          <Box mt={5}>
+          <Box mt={4}>
             <Text color="white">By Miikka Tervo</Text>
           </Box>
         </Box>

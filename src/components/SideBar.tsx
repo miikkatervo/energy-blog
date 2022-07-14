@@ -23,11 +23,14 @@ const SideBar: React.FC<SideBarProps> = ({ data }) => {
       top={20}
     >
       <Box float="right" ml={10} mr={7}>
+        <Text fontSize={20} textAlign="center" m={4}>
+          Chapters
+        </Text>
         {data!.map((t) => {
           return (
             <Box
               key={t.topic_id}
-              mt={8}
+              mb={8}
               borderWidth={2}
               borderColor="blue.900"
               borderRadius={5}
