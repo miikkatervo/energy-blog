@@ -2,7 +2,15 @@ import React from "react";
 import { Heading, Text, Box } from "@chakra-ui/react";
 
 interface ChaptersProps {
-  data: any[];
+  data: {
+    topic_id: number;
+    title: string;
+    chapters: {
+      chapter_id: number;
+      heading: string;
+      text: string;
+    }[];
+  }[];
 }
 
 const Chapters: React.FC<ChaptersProps> = ({ data }) => {

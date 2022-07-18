@@ -9,7 +9,15 @@ import {
 import React from "react";
 
 interface SideBarProps {
-  data: any[];
+  data: {
+    topic_id: number;
+    title: string;
+    chapters: {
+      chapter_id: number;
+      heading: string;
+      text: string;
+    }[];
+  }[];
 }
 
 const SideBar: React.FC<SideBarProps> = ({ data }) => {
