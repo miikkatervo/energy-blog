@@ -74,7 +74,7 @@ export const data = [
       {
         chapter_id: 2,
         heading: "Electrification and turbines",
-        text: `To achieve climate neutrality we must switch FFs to RESs.. As the name suggests, renewables are not a finite source, thus they are mostly sustainable and above all they do not add GHG to the atmosphere. Popular RESs are solar, hydro, wind and wave power and geothermal heat. Disclaimer that currently this blog is not really covering the field of heating and cooling, but it is also important nonetheless.
+        text: `To achieve climate neutrality we must switch FFs to RESs. As the name suggests, renewables are not a finite source, thus they are mostly sustainable and above all they do not add GHG to the atmosphere. Popular RESs are solar, hydro, wind and wave power and geothermal heat. Disclaimer that currently this blog is not really covering the field of heating and cooling, but it is also important nonetheless.
 
         Most RESs cannot be used as a power source by themselves. Of course there are some instances, such as sailing ships moving with wind power, but the world has accustomed to the instant and reliable power that FFs can provide, thus electrification has become a crucial part of the equation.
         
