@@ -27,7 +27,7 @@ const Chapters: React.FC<ChaptersProps> = ({ data }) => {
     <Box>
       {data!.map((t) => {
         return (
-          <Box key={t.topic_id} mt={20} mb={100}>
+          <Box key={t.topic_id} mt={20} mb={35}>
             <Heading size="lg">{t.title}</Heading>
             {t.chapters.map((c) => {
               return (
