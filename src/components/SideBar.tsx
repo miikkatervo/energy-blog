@@ -1,7 +1,9 @@
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
   Box,
   Heading,
   List,
+  ListIcon,
   ListItem,
   Text,
   UnorderedList,
@@ -47,17 +49,18 @@ const SideBar: React.FC<SideBarProps> = ({ data }) => {
               <Heading size={"sm"} fontSize={20}>
                 {t.title}
               </Heading>
-              <UnorderedList>
+              <List spacing={1.5} mt={3}>
                 {t.chapters.map((c) => {
                   return (
                     <Box key={c.chapter_id} mt={2}>
-                      <ListItem fontSize={15}>
-                        <b>{c.heading}</b>
+                      <ListItem>
+                        <ListIcon as={ChevronRightIcon} color="blue.900" />
+                        <b style={{ fontSize: "14px" }}>{c.heading}</b>
                       </ListItem>
                     </Box>
                   );
                 })}
-              </UnorderedList>
+              </List>
             </Box>
           );
         })}
